@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        /*
+        body
+        {
+            background-color: blue;
+        }
+        */
+        nav 
+        {
+        float: left;
+        width: 20%;
+        background: #ccc;
+        padding: 20px;
+        height: 660px;
+        }
+        article 
+        {
+        float: left;
+        padding: 20px;
+        width: 80%;
+        background-color: #f1f1f1;
+        }
+        .uno
+        {
+            background-color: teal;
+        }
+        .dos
+        {
+            background-color: yellow;
+        }
+        .tres
+        {
+            background-color: orange;
+        }
+        button{
+        position: relative;
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: 1px solid rgb(61, 106, 255);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        background: rgb(61, 106, 255);
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
+    button:hover{
+        background:rgb(61, 106, 255);
+        box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    button:hover::before{
+        -webkit-animation: sh02 0.5s 0s infinite;
+        -moz-animation: sh02 0.5s 0s infinite;
+        animation: sh02 0.5s 0s infinite;
+    }
+
+    button::before{
+        content: "";
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+
+    @keyframes sh02 {
+        from {
+            opacity: 0;
+            left: 0%;
+        }
+        
+        50% {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+            left: 100%;
+        }
+    }
+
+    button:active{
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="menuNav">
+            <h1>APRETAR PARA PREMIO</h1>
+            <button> ¡PREMIO! </button>
+        </nav>
+
+        <article class="uno">
+            <h1>bababooey o bababooty</h1>
+
+        </article>
+        
+        <article class="dos">
+            <h1>sexo</h1>
+
+        </article>
+
+        <article class="tres">
+            <h1>pan</h1>
+
+        </article>
+    </section>
+    
+</body>
+</html>
